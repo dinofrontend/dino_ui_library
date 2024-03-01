@@ -25,7 +25,7 @@ export default {
   }
 }
 
-const Template = (args) => {
+const Template = (args: any) => {
   // const [elemRef, setelemRef] = useState<HTMLElement | null>(null)
   return (
     <div
