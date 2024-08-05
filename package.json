@@ -1,7 +1,7 @@
 {
   "homepage": "https://dinofrontend.github.io/dino_ui_library",
   "name": "dino_ui_tools",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "UI library for Dino",
   "private": false,
   "main": "index.js",
