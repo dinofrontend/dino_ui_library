@@ -25,7 +25,7 @@
   --ds-controller-selected-bg-disabled: var(--ds-color-bg-disabled);
 
   --ds-controller-mark-light: var(--ds-color-icon-inverse);
-  --ds-controller-mark-dark: var(--ds-color-icon-disabled);
+  --ds-controller-mark-dark: var(--ds-color-bg-disabled);
 
   --ds-controller-border-color-default: var(--ds-color-border-primary);
   --ds-controller-border-color-focused: var(--grey-500);
@@ -248,14 +248,22 @@
           background-color: var(--ds-controller-selected-bg-default);
 
           #{$this}__icon__inner {
-            color: var(--ds-controller-selected-bg-default);
+            .svg-icon {
+              path {
+                fill: var(--ds-controller-selected-bg-default);
+              }
+            }
           }
 
           &:hover {
             background-color: var(--ds-controller-selected-bg-hover);
 
             #{$this}__icon__inner {
-              color: var(--ds-controller-selected-bg-hover);
+              .svg-icon {
+                path {
+                  fill: var(--ds-controller-selected-bg-hover);
+                }
+              }
             }
           }
 
@@ -263,7 +271,11 @@
             background-color: var(--ds-controller-selected-bg-pressed);
 
             #{$this}__icon__inner {
-              color: var(--ds-controller-selected-bg-pressed);
+              .svg-icon {
+                path {
+                  fill: var(--ds-controller-selected-bg-pressed);
+                }
+              }
             }
           }
         }
@@ -273,7 +285,11 @@
            background-color: var(--ds-controller-selected-bg-disabled);
 
            #{$this}__icon__inner {
-             color: var(--ds-controller-mark-dark);
+             .svg-icon {
+               path {
+                 fill: var(--ds-controller-mark-dark);
+               }
+             }
            }
           }
         }
